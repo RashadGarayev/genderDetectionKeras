@@ -66,14 +66,10 @@ elif prediction==1:
 plt.imshow(img)
 plt.show()
 
-result: 
-![result]:[https://github.com/RashadGarayev/genderDetectionKeras/blob/master/picture/Screenshot%2003-18-2019%2013.11.41.jpg]
-
-
-
-
 ```
 
+result: 
+![result]:[https://github.com/RashadGarayev/genderDetectionKeras/blob/master/picture/Screenshot%2003-18-2019%2013.11.41.jpg]
 
 
 ## train model ##
