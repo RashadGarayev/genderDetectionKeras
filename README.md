@@ -1,91 +1,54 @@
-#Gender detection
-----------------------------------------------------------
-
-Download python3.x.x  [https://www.python.org/downloads/].
-
-Download tensorflow  [https://www.tensorflow.org/].
-
-
-```
-pip install tensorflow_gpu==1.9.0
-pip install matplotlib
-pip install opencv-contrib-python
-pip install PyQt5
-```
-
-- 
-----------
-
-| Female        |Male           | 
-| ------------- |:-------------:| 
-| class 0       | class 1       | 
-
-
-```import numpy as np
-from keras.preprocessing.image import ImageDataGenerator
-from keras.models import Sequential
-from keras.layers import Activation,Dropout,Flatten,Conv2D,MaxPool2D,Dense
-from keras.preprocessing import image
-import tensorflow as tf
-from keras.models import load_model
-import matplotlib.pyplot as plt
-%matplotlib inline
-from PIL import Image
-import os,sys,cv2,time
-
-#create data from ImageDataGenerator
-image_gen=ImageDataGenerator(rotation_range=40,
-                            width_shift_range=0.1,
-                            height_shift_range=0.1,
-                            rescale=1/255,
-                            shear_range=0.2,
-                            zoom_range=0.2,
-                            horizontal_flip=True,
-                            fill_mode='nearest')
-                            
-                            
-after resize all image in subfolder
-
-python resize.py --input folder -o output folder
+# Gender detection using deep learning with keras.
+The keras model is created by training  on 1300 face images (~6500 for each class). Face region is cropped by applying `face detection` using `Opencv` on the images gathered from Google Images. It acheived around 96% training accuracy and ~90% validation accuracy. (20% of the dataset is used for validation)
 
 
 
-##test model
-img=cv2.imread('picture/woman1.jpg',1)
-img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-_file="picture/woman1.jpg"
-images=image.load_img(_file,target_size=(150,150))
-images=image.img_to_array(images)
-images=np.expand_dims(images,axis=0)
-images=images/255
-test_model=load_model('models/male_female_model.h5')
-prediction=test_model.predict_classes(images)
-if prediction==0:
-    img =cv2.putText(img=np.copy(img), text="Woman", org=(10,50),fontFace=2, fontScale=0.75, color=(0,0,255), thickness=1)
-elif prediction==1:
-    img =cv2.putText(img=np.copy(img), text="Man", org=(10,50),fontFace=2, fontScale=0.75, color=(0,0,255), thickness=1)
-plt.imshow(img)
-plt.show()
-
-```
+## Main Python packages
+* numpy
+* opencv-python
+* tensorflow_gpu
+* OpenCv
+* PyQt5
+* Matplotlib
 
 
-![result](https://github.com/RashadGarayev/genderDetectionKeras/blob/master/picture/Screenshot%2003-18-2019%2013.11.41.jpg)
+Install the required packages by executing the following command.
 
----------------------------------------------------------------------------------------------------------------------------
+`$ pip install -r requirements.txt`
 
-![result](https://github.com/RashadGarayev/genderDetectionKeras/blob/master/picture/Screenshot%2003-18-2019%2013.09.05.jpg)
+**Note: Python 2.x is not supported** 
 
+Make sure `pip` is linked to Python 3.x  (`pip -V` will display this info).
 
-## train model ##
-
-`python train.py`
-
-----------
-
-## Real-time gender classification ##
-
-`python deep.py`
+If `pip` is linked to Python 2.7. Use `pip3` instead. 
 
 
 
+## Usage
+
+### If you want before training model!
+`$ python train.py`
+
+### Real-time gender detection(webcam)
+
+`$ python deep.py`
+
+
+
+## Training
+`$ python train.py`
+
+
+
+
+Depending on the hardware configuration of your system, the execution time will vary. On CPU, training will be slow. Please use onlu tensorflow_gpu  GPU .
+
+- Minimal:
+- 8gb RAM
+- Core i5
+- Nvidia
+
+If you have an Nvidia GPU, then you can install `tensorflow-gpu` package. It will make things run a lot faster.
+
+## Help
+If you are facing any difficulty, feel free to create a new [issue](https://github.com/RashadGarayev/genderDetectionKeras/issues) or reach out on Facebook [Rashad Garayev](https://www.facebook.com/fly.trion) .
