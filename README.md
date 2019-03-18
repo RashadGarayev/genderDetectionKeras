@@ -32,15 +32,7 @@ If `pip` is linked to Python 2.7. Use `pip3` instead.
 ### Real-time gender detection(webcam)
 
 `$ python deep.py`
-
-
-
-## Training
-`$ python train.py`
-
-
-
-
+**Note:
 Depending on the hardware configuration of your system, the execution time will vary. On CPU, training will be slow. Please use onlu tensorflow_gpu  GPU .
 
 - Minimal:
@@ -49,6 +41,9 @@ Depending on the hardware configuration of your system, the execution time will 
 - Nvidia
 
 If you have an Nvidia GPU, then you can install `tensorflow-gpu` package. It will make things run a lot faster.
+
+## Training
+`$ python train.py`
 
 ## Help
 If you are facing any difficulty, feel free to create a new [issue](https://github.com/RashadGarayev/genderDetectionKeras/issues) or reach out on Facebook [Rashad Garayev](https://www.facebook.com/fly.trion) .
