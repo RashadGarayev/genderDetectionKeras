@@ -1,5 +1,5 @@
 # Autor : Rashad Garayev #
-## garayevrashad@hotmail.com ##
+ garayevrashad@hotmail.com 
 
 
 #classification
