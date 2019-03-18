@@ -71,6 +71,10 @@ plt.show()
 
 ![result](https://github.com/RashadGarayev/genderDetectionKeras/blob/master/picture/Screenshot%2003-18-2019%2013.11.41.jpg)
 
+---------------------------------------------------------------------------------------------------------------------------
+
+![result](https://github.com/RashadGarayev/genderDetectionKeras/blob/master/picture/Screenshot%2003-18-2019%2013.09.05.jpg)
+
 
 ## train model ##
 
