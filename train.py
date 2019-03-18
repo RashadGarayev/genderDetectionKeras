@@ -36,7 +36,7 @@ model=Sequential()
 
 #model 
 
-input_shape=(150,150,1)
+input_shape=(150,150,3)
 
 model.add(Conv2D(filters=32,kernel_size=(3,3),input_shape=(150,150,3),
                  activation='relu'))
