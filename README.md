@@ -6,10 +6,11 @@ Download python3.x.x  [https://www.python.org/downloads/].
 Download tensorflow  [https://www.tensorflow.org/].
 
 
-```pip install tensorflow_gpu==1.9.0
-   pip install matplotlib
-   pip install opencv-contrib-python
-   pip install PyQt5
+```
+pip install tensorflow_gpu==1.9.0
+pip install matplotlib
+pip install opencv-contrib-python
+pip install PyQt5
 ```
 
 - 
