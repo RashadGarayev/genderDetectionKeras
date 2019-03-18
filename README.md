@@ -33,7 +33,9 @@ If `pip` is linked to Python 2.7. Use `pip3` instead.
 
 `$ python deep.py`
 **Note:
-Depending on the hardware configuration of your system, the execution time will vary. On CPU, training will be slow. Please use onlu tensorflow_gpu  GPU .
+Depending on the hardware configuration of your system, the execution time will varry. On CPU, training will be slow. Please use only tensorflow_gpu .
+**(https://developer.nvidia.com/rdp/cudnn-archive#a-collapse705-8) CudNN 7.0.5
+**(https://developer.nvidia.com/cuda-90-download-archive)Cuda Toolkit 9.0
 
 - Minimal:
 - 8gb RAM
