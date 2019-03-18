@@ -6,10 +6,12 @@ Download python3.x.x  [https://www.python.org/downloads/].
 Download tensorflow  [https://www.tensorflow.org/].
 
 
-> pip install tensorflow_gpu==1.9.0.
-> pip install matplotlib.
-> pip install opencv-contrib-python.
-> pip install PyQt5.
+```pip install tensorflow_gpu==1.9.0.
+   pip install matplotlib.
+   pip install opencv-contrib-python.
+   pip install PyQt5.
+```
+
 - 
 ----------
 
@@ -65,7 +67,7 @@ plt.imshow(img)
 plt.show()
 
 result: 
-[logo]:[https://github.com/RashadGarayev/genderDetectionKeras/blob/master/picture/Screenshot%2003-18-2019%2013.11.41.jpg]
+![result]:[https://github.com/RashadGarayev/genderDetectionKeras/blob/master/picture/Screenshot%2003-18-2019%2013.11.41.jpg]
 
 
 
