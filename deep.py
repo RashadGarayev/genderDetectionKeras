@@ -3,11 +3,7 @@ from PyQt5.QtWidgets import QApplication,QDialog,QWidget
 from PyQt5.uic import loadUi
 from PyQt5 import *
 import numpy as np
-import matplotlib.pyplot as plt
 import sys,os,cv2,datetime
-import six.moves.urllib as urllib
-from collections import defaultdict
-from io import StringIO
 from matplotlib import pyplot as plt
 from keras.models import load_model
 from keras.preprocessing import image
