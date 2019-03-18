@@ -69,7 +69,7 @@ test_image_gen=image_gen.flow_from_directory('data/test/',
                                              class_mode='binary')
 
 
-train_image_gen.class_indices #test class
+print(train_image_gen.class_indices #test class)
 
 #training model
 # epochs and step_per epoch number
