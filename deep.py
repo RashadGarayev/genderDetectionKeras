@@ -1,28 +1,21 @@
 
-
-import sys
 from PyQt5.QtWidgets import QApplication,QDialog,QWidget
 from PyQt5.uic import loadUi
 from PyQt5 import *
 import numpy as np
-import os
+import matplotlib.pyplot as plt
+import sys,os,cv2,datetime
 import six.moves.urllib as urllib
-import sys
-import tarfile
-import zipfile
-import imageio
 from collections import defaultdict
 from io import StringIO
 from matplotlib import pyplot as plt
-from PIL import Image
-import datetime,cv2
 from keras.models import load_model
 from keras.preprocessing import image
 from PyQt5 import QtCore
 from PyQt5 import QtWidgets
 from PyQt5 import QtGui
 from PyQt5.QtCore import pyqtSignal
-import matplotlib.pyplot as plt
+
 class Window(QDialog):
     def __init__(self):
         super(Window,self).__init__()
