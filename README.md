@@ -1,7 +1,3 @@
-# Autor : Rashad Garayev #
- garayevrashad@hotmail.com 
-
-
 classification
 - 
 
