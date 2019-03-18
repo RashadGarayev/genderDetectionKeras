@@ -52,7 +52,7 @@ class Window(QDialog):
             
             _image=_image/255
             
-            categories=['male','female']
+            
             prediction=new_model.predict_classes(_image)
             if prediction ==0:
                 cv2.putText(self.image, "Woman", (x, y),cv2.FONT_HERSHEY_SIMPLEX, 0.35, (0, 255, 0), 1)
