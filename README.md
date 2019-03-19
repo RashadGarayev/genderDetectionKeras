@@ -5,7 +5,6 @@ The keras model is created by training  on 1300 face images (~650 for each class
 
 ## Main Python packages
 * numpy
-* opencv-python
 * tensorflow_gpu
 * OpenCv
 * PyQt5
@@ -17,10 +16,6 @@ Install the required packages by executing the following command.
 `$ pip install -r requirements.txt`
 
 **Note: Python 2.x is not supported** 
-
-Make sure `pip` is linked to Python 3.x  (`pip -V` will display this info).
-
-If `pip` is linked to Python 2.7. Use `pip3` instead. 
 
 
 
