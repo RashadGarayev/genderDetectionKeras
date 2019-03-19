@@ -27,6 +27,7 @@ Install the required packages by executing the following command.
 ### Real-time gender detection(webcam)
 
 `$ python deep.py`
+'''------------------------------------------------------------------'''
 **Note:
 Depending on the hardware configuration of your system, the execution time will varry. On CPU, training will be slow. Please use only tensorflow_gpu .
 -(https://developer.nvidia.com/rdp/cudnn-archive#a-collapse705-8) CudNN 7.0.5
