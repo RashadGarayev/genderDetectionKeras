@@ -3,7 +3,7 @@ The keras model is created by training  on 1300 face images (~650 for each class
 
 
 
-## Main Python packages
+## Python packages
 * numpy
 * tensorflow_gpu
 * OpenCv
