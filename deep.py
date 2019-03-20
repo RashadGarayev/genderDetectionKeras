@@ -34,7 +34,6 @@ class Window(QDialog):
         faces = face_cascade.detectMultiScale(gray,1.2,5)
         for(x,y,w,h) in faces:
             cv2.rectangle(self.image,(x,y),(x+w,y+h),(255,0,0),2)
-            gray_face = gray[y:y+h,x:x+w]
             color_face = gray[y:y+h,x:x+w]
             cropped=cv2.imwrite('picture/example.jpg',color_face)
             new_model=load_model('models/male_female_model.h5')
