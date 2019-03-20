@@ -52,10 +52,10 @@ class Window(QDialog):
             prediction=new_model.predict_classes(_image)
             if prediction ==0:
                 cv2.putText(self.image, "Woman", (x, y),cv2.FONT_HERSHEY_SIMPLEX, 0.35, (0, 255, 0), 1)
-                self.listWidget.addItem('Female')
+                self.listWidget.addItem('Woman')
             elif prediction == 1:
                 cv2.putText(self.image, "Man", (x, y),cv2.FONT_HERSHEY_SIMPLEX, 0.35, (0, 255, 0), 1)
-                self.listWidget.addItem('Male')
+                self.listWidget.addItem('Man')
             else:
                 cv2.putText(self.image, "Face detect", (x, y),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.35, (0, 255, 0), 1)
