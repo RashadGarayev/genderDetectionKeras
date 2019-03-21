@@ -3,7 +3,7 @@ import argparse
 from PIL import Image
 DEFAULT_SIZE = (256, 256)
 def resize_image(input_dir, infile, output_dir="resized", size=DEFAULT_SIZE):
-    outfile = os.path.splitext(infile)[0] + "man"
+    outfile = os.path.splitext(infile)[0] + "add_man_or_woman"
     extension = os.path.splitext(infile)[1]
     try:
         img = Image.open(input_dir + '/' + infile)
