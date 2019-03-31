@@ -1,12 +1,5 @@
 
 
-
-
-
-
-
-
-
 # Gender detection using deep learning with keras.
 The keras model is created by training  on 1300 face images (~6500 for each class). Face region is cropped by applying `face detection` using `Opencv` on the images gathered from Google Images.Used 6 gender(male,female) after generated with ImageDataGenerator.
 
