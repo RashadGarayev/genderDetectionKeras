@@ -1,3 +1,8 @@
+
+
+
+
+
 <img alt="Supported Python Versions" src="https://warehouse-camo.cmh1.psfhosted.org/b8501e4adbe16124d08c31733e1d3bce9d747ba9/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f5370656563685265636f676e6974696f6e2e737667">
 
 
@@ -20,6 +25,7 @@ Install the required packages by executing the following command.
 `$ pip install -r requirements.txt`
 
 **Note: Python 2.x is not supported** 
+
 
 
 
