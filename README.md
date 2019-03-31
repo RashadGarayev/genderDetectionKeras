@@ -37,7 +37,6 @@ Install the required packages by executing the following command.
 - If you have an Nvidia GPU, then you can install `tensorflow-gpu` package. It will make things run a lot faster.
 Depending on the hardware configuration of your system, the execution time will vary. On CPU, training will be slow. Please use onlu tensorflow_gpu  GPU .
 
-<img src="/google/pybadges/raw/master/tests/golden-images/build-failure.svg?sanitize=true" alt="pip installation" style="max-width:100%;">
 
 - Minimal:
 - 8gb RAM
