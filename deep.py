@@ -14,6 +14,7 @@ from PyQt5.QtCore import pyqtSignal
 
 class Window(QDialog):
     def __init__(self):
+        """-----------------------------"""
         super(Window,self).__init__()
         loadUi('gui.ui',self)
         self.image=None
