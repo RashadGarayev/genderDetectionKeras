@@ -3,8 +3,8 @@ from PyQt5.QtWidgets import QApplication,QDialog,QWidget
 from PyQt5.uic import loadUi
 from PyQt5 import *
 import numpy as np
-import sys,os,cv2,datetime
-from matplotlib import pyplot as plt
+import os,cv2,datetime
+#from matplotlib import pyplot as plt
 from keras.models import load_model
 from keras.preprocessing import image
 from PyQt5 import QtCore
@@ -31,7 +31,7 @@ class Window(QDialog):
         ret,self.image=self.capture.read()
         gray = cv2.cvtColor(self.image,cv2.COLOR_BGR2GRAY)
         face_cascade = cv2.CascadeClassifier('Cascade/haarcascade-frontalface-default.xml')
-        gray = cv2.cvtColor(self.image,cv2.COLOR_BGR2GRAY)
+        
         faces = face_cascade.detectMultiScale(gray,1.2,5)
         for(x,y,w,h) in faces:
             cv2.rectangle(self.image,(x,y),(x+w,y+h),(255,0,0),2)
