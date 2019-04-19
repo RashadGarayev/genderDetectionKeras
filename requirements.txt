@@ -1,7 +1,7 @@
-pip install tensorflow_gpu
-pip install matplotlib
-pip install PyQt5
-pip install opencv-contrib-python
-pip install keras
-pip install numpy
-pip install Pillow
+tensorflow_gpu
+matplotlib
+PyQt5
+opencv-contrib-python
+keras
+numpy
+Pillow
